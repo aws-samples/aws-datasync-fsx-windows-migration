@@ -53,13 +53,13 @@ Although the EC2 instance running the DataSync agent was deployed in the first m
 3. For the Service endpoint, select **VPC endpoints using AWS PrivateLink**.  This will limit all DataSync traffic to the VPC in which the agent is running.  This is useful when you have an AWS DirectConnect or VPN connection from your on-premises environment into AWS.  For more information on configuring DataSync for VPC access, check out [this documentation](https://docs.aws.amazon.com/datasync/latest/userguide/datasync-in-vpc.html).
 4. For the VPC Endpoint, select the endpoint ID that matches the ID in the CloudFormation outputs tab.  The VPC has only one subnet and one security group - both will automatically be selected for you.
 
-    ![](../images/mod3-vpc-config.png)
+    <img src="../images/mod3-vpc-config.png" width="85%" height="85%">
 
 4. Under the **Activation key** section, enter the **Public IP address** of the DataSync agent. You can get this IP address from the CloudFormation output.  You use the public IP address here because the agent needs to be accessible by your web browser for activation.  You could also use a Private IP address for activation if your browser could route to it. Enter the public IP address of the agent then click **Get key.**
 
 5. Once the activation is successful, you will be shown the activation key and will be prompted for further information.
 
-    ![](../images/mod3-activate.png)
+    <img src="../images/mod3-activate.png" width="65%" height="65%">
 
 6. Enter a name for the Agent and apply any tags if desired, then click **Create agent**.
 
@@ -71,11 +71,11 @@ DataSync copies data from a source location to a destination location.  Location
 2. Under the **Location Type** select "Server Message Block (SMB)".
 3. Select the agent you just created in the previous step.  Under **SMB Server**, enter the **Private IP address** of the Windows Server, which you can find in the CloudFormation outputs.  Under **Share name** enter "/Share1".
 
-    ![](../images/mod3-smb-config.png)
+    <img src="../images/mod3-smb-config.png" width="85%" height="85%">
 
 4. Under **User settings**, for **User**, enter "datasync".  For **Password** enter the common password you created as part of CloudFormation.  For **Domain** enter the full domain name, found in the CloudFormation outputs.  These are the user credentials that AWS DataSync will use to access the network share on the Windows Server.  
 
-    ![](../images/mod3-smb-user.png)
+    <img src="../images/mod3-smb-user.png" width="85%" height="85%">
 
 5. Click on **Create location**
 
@@ -89,7 +89,7 @@ The **datasync** AD user was created automatically in the CloudFormation stack a
 4. For the **Share name** enter "/share1".
 5. Expand **Additional settings**.  Remove the default security group and select the security group named "MigrationWorkshop-dmSecurityGroup".  This will provide the necessary access from the DataSync service to the FSx file server.
 
-    ![](../images/mod3-fsx-location.png)
+    <img src="../images/mod3-fsx-location.png" width="85%" height="85%">
 
 5. Under **User settings** use the same credentials you provided for the SMB location for the Windows Server.
 6. Click on **Create location**
@@ -103,11 +103,11 @@ The **datasync** AD user was created automatically in the CloudFormation stack a
 5. Click **Next**
 6. Give the task a name.  Under the Verify data option, make sure that "Verify only the data transferred" option is selected.  This will verify data at the destination in the most optimal way.  Leave the other Options as-is.
 
-    ![](../images/mod3-task-options.png)
+    <img src="../images/mod3-task-options.png" width="65%" height="65%">
 
 7. Scroll down to the **Task logging** section.  Under **Log level**, select "Log all transferred objects and files".  Under **CloudWatch Log group**, select the group named "DataSyncLogs-MigrationWorkshop".
 
-    ![](../images/mod3-logging.png)
+    <img src="../images/mod3-logging.png" width="65%" height="65%">
 
 8. Click **Next**.
 9. Verify all task settings then click on **Create task**.
@@ -120,13 +120,13 @@ The **datasync** AD user was created automatically in the CloudFormation stack a
 4. Under the **History** tab, click on the task execution object in the list.
 5. As the task runs, the execution status will progress from &quot;Launching&quot; to &quot;Preparing&quot; to &quot;Transferring&quot; to &quot;Verifying&quot; and finally to &quot;Success&quot;.  Once the task completes, the console will report statistics on the job, as shown below.
 
-    ![](../images/mod3-success.png)
+    <img src="../images/mod3-success.png" width="85%" height="85%">
 
 ## Validation Step
 
 Return to the Windows Server remote desktop session.  In the Windows Explorer window for the FSx share, you should now see an exact copy of the files and folders from the share1 folder on the Windows Server.  You should also see a folder name ".aws-datasync", which was created by DataSync as part of the migration process.
 
-![](../images/mod3-validate-1.png)
+<img src="../images/mod3-validate-1.png" width="65%" height="65%">
 
 If you check the security properties on the various files and folders you will find that they exactly match those on Windows Server share1 folder.
 
