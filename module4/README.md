@@ -7,7 +7,7 @@ Errors or corrections? Contact [jeffbart@amazon.com](mailto:jeffbart@amazon.com)
 
 ---
 
-# Module 5
+# Module 4
 ## Workshop clean-up
 
 To make sure all resources are deleted after this workshop scenario make sure you execute the steps in the order outlined below (you do not need to wait for CloudFormation to finish deleting before moving to the next step):
