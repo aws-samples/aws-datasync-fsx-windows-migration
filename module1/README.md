@@ -53,8 +53,7 @@ On the CloudFormation page , click on the **Outputs** tab, as shown in the image
 - **netBiosName** – This is the NetBIOS name of the Active Directory domain that you entered as a parameter when the stack was being created.  
 - **windowsServerPrivateIp** – This is the private IP address of the EC2 instance running the Windows Server .  You will copy data from this server to FSx for Windows using DataSync.
 
-TODO: need new picture with NetBIOS name
-![](../images/mod1-cfout.png)
+<img src="../images/mod1-cfout.png" width="75%" height="75%">
 
 ## Validation Step
 
