@@ -282,7 +282,7 @@ Resources:
                 $accessFinance = New-Object System.Security.AccessControl.FileSystemAccessRule("${netBiosName}\Finance","Modify",$InheritanceFlag,$PropagationFlag,"Allow")
 
                 $owner = New-Object System.Security.Principal.NTAccount("${netBiosName}\Admin")
-                $group = New-Object System.Security.Principal.NTAccount("MYDOMAIN\Domain Users")
+                $group = New-Object System.Security.Principal.NTAccount("${netBiosName}\Domain Users")
 
                 function SetOwnerAndGroup{
                     Param ($obj, $own, $grp)
