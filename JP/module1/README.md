@@ -68,4 +68,4 @@ Errors or corrections? Contact [jeffbart@amazon.com](mailto:jeffbart@amazon.com)
 
 次のモジュールでは、FSxファイルシステムにコピーするためのWindowsサーバーでの共有データを準備します。
 
-[モジュール 2](/module2)へ
+[モジュール 2](module2)へ
