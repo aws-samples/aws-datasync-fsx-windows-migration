@@ -7,7 +7,7 @@ Errors or corrections? Contact [jeffbart@amazon.com](mailto:jeffbart@amazon.com)
 
 ---
 
-# Module 1
+# モジュール 1
 ## クラウドフォーメーションを使用したリソースのデプロイ
 
 このモジュールでは、ワークショップに必要な全てのAWSリソースのデプロイをクラウドフォーメーションを使って行います。リソースとしてアクティブディレクトリドメイン、Windowsサーバー、DataSyncエージェント、FSxファイルシステムが1つのVPC内に構成されます。 これらのリソースはサブネットに紐付けされます。サブネットは1つのパブリックサブネットと2つのプライベートサブネットで構成されます。パブリックサブネットは通常オンプレミス側に存在するリソースを擬似したものになります。プライベートサブネットにはAWS側のリソースを表現しています。DataSyncはVPCエンドポイントとリージョン内のDataSyncマネージドサービスを通じて、WindowsサーバーのデータをFSxに転送します。 Windowsサーバー、FSxファイルシステム共に、AWSマネージドMicrosoft ADインスタンスで構成されたアクティブディレクトリドメインに参加します。
@@ -68,4 +68,4 @@ Errors or corrections? Contact [jeffbart@amazon.com](mailto:jeffbart@amazon.com)
 
 次のモジュールでは、FSxファイルシステムにコピーするためのWindowsサーバーでの共有データを準備します。
 
-[モジュール 2](module2)へ
+[モジュール 2](/JP/module2)へ
