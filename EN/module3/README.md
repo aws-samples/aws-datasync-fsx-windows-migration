@@ -73,7 +73,7 @@ DataSync copies data from a source location to a destination location.  Location
 
     <img src="../images/mod3-smb-config.png" width="85%" height="85%">
 
-4. Under **User settings**, for **User**, enter "datasync".  For **Password** enter the common password you created as part of CloudFormation.  For **Domain** enter the full domain name, found in the CloudFormation outputs.  These are the user credentials that AWS DataSync will use to access the network share on the Windows Server.  
+4. Under **User settings**, for **User**, enter "datasync".  For **Password** enter the common password you created as part of CloudFormation.  For **Domain** enter the full domain name, found in the CloudFormation outputs.  These are the user credentials that AWS DataSync will use to access the network share on the Windows Server.
 
     <img src="../images/mod3-smb-user.png" width="85%" height="85%">
 
@@ -138,4 +138,4 @@ While this workshop only copied a small amount of data into FSx, DataSync is bui
 
 In the next module, you will cleanup all resources created in this workshop.
 
-Go to [Module 4](/module4).
+Go to [Module 4](module4).

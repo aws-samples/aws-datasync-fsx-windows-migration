@@ -34,7 +34,7 @@ To login to the Windows Server, you will need a Remote Desktop client.  This is 
 
     At the top of the window, you can also see the owner of the folder, which in this case is the Active Directory Admin user.  In most cases, the Owner of a folder or file will be the name of the account that created it.
 
-4. Close the security windows and open the share1 folder. You should see four folders: Finance, HR, Legal, Shared. Each directory has a few sub-folders and files.  
+4. Close the security windows and open the share1 folder. You should see four folders: Finance, HR, Legal, Shared. Each directory has a few sub-folders and files.
 
     <img src="../images/mod2-share1.png" width="75%" height="75%">
 
@@ -66,7 +66,7 @@ In order to copy the data from your Windows Server, AWS DataSync will need a net
 
 When you create a new FSx file server, it automatically creates a network share named "share".  To show you how to manage FSx file shares, we'll go ahead and create a new share using the steps below.  You can also check out the [FSx documentation](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/managing-file-shares.html) for further details.
 
-1. Click on the Windows launch icon and type in "fsmgmt.msc" to launch the Shared Folders dialog box.  
+1. Click on the Windows launch icon and type in "fsmgmt.msc" to launch the Shared Folders dialog box.
 
     <img src="../images/mod2-fsmgmt.png" width="30%" height="30%">
 
@@ -101,7 +101,7 @@ When you create a new FSx file server, it automatically creates a network share 
 
 ## Validation Step
 
-To verify that data ultimately gets copied to FSx, go ahead and mount the new FSx share on the Windows Server.  Open Windows Explorer, right click on **This PC** and select **Map network drive...**  
+To verify that data ultimately gets copied to FSx, go ahead and mount the new FSx share on the Windows Server.  Open Windows Explorer, right click on **This PC** and select **Map network drive...**
 
 <img src="../images/mod2-map-drive.png" width="50%" height="50%">
 
@@ -117,4 +117,4 @@ In this module, you explored the share1 folder on the Windows Server and looked 
 
 In the next module, you will create a DataSync task and run it to copy the share folder contents from the Windows Server to the FSx file system.
 
-Go to [Module 3](/module3).
+Go to [Module 3](module3).

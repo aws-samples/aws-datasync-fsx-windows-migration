@@ -49,8 +49,8 @@ On the CloudFormation page , click on the **Outputs** tab, as shown in the image
 - **commonPassword** – This is the password that is used for all Active Directory users.  Any time you are required to enter a password, it will be this one.
 - **dataSyncAgentPublicIP** – This is the public IP address of the EC2 instance running the DataSync agent.  You will use this when activating the DataSync agent.
 - **dataSyncVpcEndpointId** - This is the ID of the DataSync VPC endpoint.  You will use this when activating the DataSync agent.
-- **domainName** – This is the full name of the Active Directory domain that you entered as a parameter when the stack was being created.  
-- **netBiosName** – This is the NetBIOS name of the Active Directory domain that you entered as a parameter when the stack was being created.  
+- **domainName** – This is the full name of the Active Directory domain that you entered as a parameter when the stack was being created.
+- **netBiosName** – This is the NetBIOS name of the Active Directory domain that you entered as a parameter when the stack was being created.
 - **windowsServerPrivateIp** – This is the private IP address of the EC2 instance running the Windows Server .  You will copy data from this server to FSx for Windows using DataSync.
 
 <img src="../images/mod1-cfout.png" width="75%" height="75%">
@@ -67,4 +67,4 @@ In this module, you deployed all resources necessary to complete this workshop a
 
 In the next module, you will prepare the data on the Windows Server for sharing, so it can be copied to your FSx file system.
 
-Go to [Module 2](/module2).
+Go to [Module 2](module2).
