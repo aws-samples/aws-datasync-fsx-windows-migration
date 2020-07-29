@@ -138,4 +138,4 @@ While this workshop only copied a small amount of data into FSx, DataSync is bui
 
 In the next module, you will cleanup all resources created in this workshop.
 
-Go to [Module 4](module4).
+Go to [Module 4](../module4).

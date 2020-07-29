@@ -117,4 +117,4 @@ In this module, you explored the share1 folder on the Windows Server and looked 
 
 In the next module, you will create a DataSync task and run it to copy the share folder contents from the Windows Server to the FSx file system.
 
-Go to [Module 3](module3).
+Go to [Module 3](../module3).

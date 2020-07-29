@@ -67,4 +67,4 @@ In this module, you deployed all resources necessary to complete this workshop a
 
 In the next module, you will prepare the data on the Windows Server for sharing, so it can be copied to your FSx file system.
 
-Go to [Module 2](module2).
+Go to [Module 2](../module2).
