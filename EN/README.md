@@ -45,9 +45,9 @@ It will cost approximately **10.00 USD** to run this workshop.  It is recommende
 
 This workshop consists of the following modules:
 
-- [Module 1](/module1) - Deploy resources using CloudFormation
-- [Module 2](/module2) - Configure file shares on the Windows Server and FSx
-- [Module 3](/module3) - Copy files from the Windows Server to FSx using DataSync
-- [Module 4](/module4) - Cleanup resources
+- [Module 1](module1) - Deploy resources using CloudFormation
+- [Module 2](module2) - Configure file shares on the Windows Server and FSx
+- [Module 3](module3) - Copy files from the Windows Server to FSx using DataSync
+- [Module 4](module4) - Cleanup resources
 
-To get started, go to [Module 1](/module1).
+To get started, go to [Module 1](module1).
