@@ -31,6 +31,8 @@ Errors or corrections? Contact [jeffbart@amazon.com](mailto:jeffbart@amazon.com)
   | us-east-2 | US East (Ohio) | [us-east-2へデプロイ](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=MigrationWorkshop&amp;templateURL=https://aws-datasync-samples.s3-us-west-2.amazonaws.com/workshops/fsxw-migration/datasync-fsx-windows-migration.yaml) |
   | eu-west-1 | Ireland | [eu-west-1へデプロイ](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=MigrationWorkshop&amp;templateURL=https://aws-datasync-samples.s3-us-west-2.amazonaws.com/workshops/fsxw-migration/datasync-fsx-windows-migration.yaml) |
   | eu-central-1 | Frankfurt | [eu-central-1へデプロイ](https://console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/new?stackName=MigrationWorkshop&amp;templateURL=https://aws-datasync-samples.s3-us-west-2.amazonaws.com/workshops/fsxw-migration/datasync-fsx-windows-migration.yaml) |
+  | ap-northeast-1 | Tokyo | [ap-northeast-1へデプロイ](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/new?stackName=MigrationWorkshop&amp;templateURL=https://aws-datasync-samples.s3-us-west-2.amazonaws.com/workshops/fsxw-migration/datasync-fsx-windows-migration.yaml) |
+
 
 2. Create Stackページで**Next**をクリック。
 3. Stack Nameはそのままにしてください。**Parameters**セクションで、 このスタックで作成したインスタンスへSSHとRDPでログインするために、EC2キーペアを選択してください。NetBIOS名と共にドメイン名を入力してください。共通パスワードはスタックによって作成された全てのユーザーに適用されます。パスワードは必ず文字、数字、最低１文字の符号を含み、合計８文字以上で有る必要が有ります。AMI IDsは変更しないでください。全てを入力したら**Next**をクリック。
