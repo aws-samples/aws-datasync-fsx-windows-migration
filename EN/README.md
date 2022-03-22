@@ -6,6 +6,11 @@ This sample code is made available under the MIT-0 license. See the LICENSE file
 Errors or corrections? Contact [jeffbart@amazon.com](mailto:jeffbart@amazon.com).
 
 ---
+**This workshop is now being maintained in AWS [workshop studio](https://workshops.aws/)**
+
+- [Migrate to FSx Windows File Server using AWS DataSync](https://catalog.us-east-1.prod.workshops.aws/datasync-fsx-windows-migration/en-US)
+
+---
 
 ## Workshop scenario
 
